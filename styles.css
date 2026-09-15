@@ -122,6 +122,7 @@ body {
 
     padding-left: 5%;
     padding-top: 72px;
+    padding-bottom: 90px;
 }
 
 /* Columna izquierda */
@@ -160,12 +161,13 @@ body {
 /* Título */
 
 .hero-title {
-    font-size: clamp(42px, 5vw, 76px);
-    line-height: 0.95;
+    font-size: clamp(38px, 4.3vw, 64px);
+    line-height: 0.92;
     font-weight: 900;
     text-transform: uppercase;
 
-    margin-bottom: 24px;
+    margin-bottom: 22px;
+    max-width: 600px;
 }
 
 .hero-title .yellow {
@@ -226,7 +228,7 @@ body {
 ======================================== */
 
 .hero-extra {
-    margin-top: 32px;
+    margin-top: 26px;
 
     font-size: 9px;
     letter-spacing: 3px;
@@ -241,7 +243,7 @@ body {
 .scroll-indicator {
     position: absolute;
     left: 5%;
-    bottom: 30px;
+    bottom: 18px;
 
     z-index: 6;
 
