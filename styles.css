@@ -846,22 +846,27 @@ body {
    RUTA DEL AVIÓN
 ======================================== */
 
+/* ========================================
+   RUTA DEL AVIÓN
+======================================== */
+
 .flight-route {
     position: absolute;
 
-    width: 900px;
+    width: 780px;
 
     height: auto;
 
-    right: -120px;
+    right: -80px;
 
-    top: -210px;
+    top: -120px;
 
     z-index: 4;
 
     pointer-events: none;
-}
 
+    opacity: 1;
+}
 
 /* ========================================
    TARJETA DE EXPERIENCIA
