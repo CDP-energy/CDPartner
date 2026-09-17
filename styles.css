@@ -423,6 +423,7 @@ body {
 }
 
 
+
 /* ========================================
    SECCIÓN BIENVENIDA
 ======================================== */
@@ -432,14 +433,66 @@ body {
 
     width: 100%;
 
-    display: grid;
-    grid-template-columns: 50% 50%;
+    min-height: 500px;
 
     background: #f8f9fd;
+
+    overflow: visible;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ========================================
+   CUADRO DE BIENVENIDA
+======================================== */
+
+.welcome-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 54%;
+
+    min-height: 500px;
+
+    padding: 55px 6% 48px 7%;
+
+    background: #f8f9fd;
+
+    color: #011d3d;
+}
+
+
+/* ========================================
+   IMAGEN ¿QUÉ ES CDPARTNER?
+======================================== */
+
+.what-is-image {
+    position: absolute;
+
+    z-index: 5;
+
+    top: 0;
+    right: 0;
+
+    width: 50%;
+
+    height: 100%;
 
     overflow: hidden;
 }
 
+.what-is-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
 
 /* ========================================
    CONTENIDO DE BIENVENIDA
@@ -461,7 +514,7 @@ body {
 ======================================== */
 
 .welcome-content h2 {
-    max-width: 560px;
+    max-width: 500px;
 
     margin: 0 0 25px;
 
@@ -469,13 +522,13 @@ body {
 
     font-family: "Poppins", sans-serif;
 
-    font-size: clamp(27px, 2.4vw, 38px);
+    font-size: clamp(25px, 2.2vw, 34px);
 
     line-height: 1.18;
 
     font-weight: 700;
 
-    letter-spacing: -0.5px;
+    letter-spacing: -0.4px;
 }
 
 
@@ -496,11 +549,15 @@ body {
 
     font-size: 13px;
 
-    line-height: 1.7;
+    line-height: 1.65;
 
-    font-style: italic;
+    font-style: normal;
 
     font-weight: 400;
+}
+
+.welcome-text p:last-child {
+    margin-bottom: 0;
 }
 
 .welcome-text p:last-child {
@@ -521,11 +578,44 @@ body {
     margin-top: 25px;
 }
 
-.welcome-signature img {
+/* ========================================
+   FOTO DE INGRID
+======================================== */
+
+.welcome-signature {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.ingrid-photo-frame {
     width: 58px;
     height: 58px;
 
-    object-fit: contain;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: #eebe4f;
+
+    border: 3px solid #eebe4f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingrid-photo-frame img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
 
     display: block;
 }
@@ -567,13 +657,13 @@ body {
 .gallery-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 
-    gap: 15px;
+    gap: 18px;
 
-    margin-top: 30px;
+    margin-top: 28px;
 
-    max-width: 570px;
+    max-width: 620px;
 }
 
 .gallery-row p {
@@ -586,6 +676,8 @@ body {
     font-size: 9px;
 
     line-height: 1.5;
+
+    white-space: nowrap;
 }
 
 .gallery-row strong {
