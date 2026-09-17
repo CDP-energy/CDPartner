@@ -474,10 +474,20 @@ body {
 
     z-index: 5;
 
-    width: 46%;
+    width: 48%;
     min-height: 500px;
 
     overflow: hidden;
+}
+
+.what-is-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 .what-is-image img {
