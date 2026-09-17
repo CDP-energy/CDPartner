@@ -454,7 +454,7 @@ body {
 
     z-index: 2;
 
-    width: 52%;
+    width: 55%;
     min-height: 500px;
 
     padding: 55px 5% 48px 7%;
@@ -472,9 +472,9 @@ body {
 .what-is-image {
     position: relative;
 
-    z-index: 5;
+    z-index: 3;
 
-    width: 48%;
+    width: 45%;
     min-height: 500px;
 
     overflow: hidden;
@@ -822,14 +822,15 @@ body {
 .flight-route {
     position: absolute;
 
-    width: min(900px, 75vw);
+    width: 900px;
 
     height: auto;
 
-    right: -80px;
-    top: -80px;
+    right: -120px;
 
-    z-index: 1;
+    top: -210px;
+
+    z-index: 4;
 
     pointer-events: none;
 }
