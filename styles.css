@@ -806,6 +806,10 @@ body {
    SECCIÓN EXPERIENCIA
 ======================================== */
 
+/* ========================================
+   SECCIÓN EXPERIENCIA
+======================================== */
+
 .experience-section {
     position: relative;
 
@@ -819,6 +823,235 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+
+/* ========================================
+   RUTA DEL AVIÓN — CAPA TRASERA
+======================================== */
+
+.flight-route-back {
+    position: absolute;
+
+    z-index: 1;
+
+    width: 760px;
+    height: auto;
+
+    top: -55px;
+    left: 55%;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   TARJETA FLOTANTE
+======================================== */
+
+.experience-card {
+    position: relative;
+
+    z-index: 3;
+
+    width: 600px;
+    min-height: 390px;
+
+    margin: 95px auto 0;
+
+    padding: 55px 45px 45px;
+
+    box-sizing: border-box;
+
+    background: #f8f9fd;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.16),
+        0 4px 8px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   MAPA DENTRO DE LA TARJETA
+======================================== */
+
+.experience-card::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: 0;
+
+    width: 530px;
+    height: auto;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    aspect-ratio: 1150 / 580;
+
+    background-image: url("Mapa-de-cuadro-flotante.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   CONTENIDO DE LA TARJETA
+   POR ENCIMA DEL MAPA
+======================================== */
+
+.experience-card h2,
+.experience-text,
+.experience-card .adventure-button {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.experience-card h2 {
+    margin: 0 0 25px;
+
+    color: #011d3d;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+/* ========================================
+   TEXTO
+======================================== */
+
+.experience-text {
+    max-width: 500px;
+
+    margin: 0 auto;
+}
+
+.experience-text p {
+    margin: 0 0 14px;
+
+    color: #606060;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+.experience-text p:last-child {
+    margin-bottom: 0;
+}
+
+.experience-text .experience-final {
+    margin-top: 25px;
+
+    color: #202622;
+
+    font-style: normal;
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   BOTÓN
+======================================== */
+
+.adventure-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+
+    padding: 12px 22px;
+
+    background: #eebe4f;
+
+    color: #011d3d;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    border-radius: 6px;
+
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+
+    transition: 0.25s ease;
+}
+
+.adventure-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   RUTA DEL AVIÓN — CAPA DELANTERA
+======================================== */
+
+.flight-route-front {
+    position: absolute;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    /*
+       Por ahora dejamos esta capa preparada.
+       Después ajustaremos exactamente qué parte
+       de la ruta debe pasar por encima de la tarjeta.
+    */
+
+    top: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+}
+
+.flight-route-front img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
 
 /* ========================================
    RUTA DEL AVIÓN — CAPA TRASERA
