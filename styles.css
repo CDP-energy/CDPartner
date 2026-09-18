@@ -785,7 +785,7 @@ body {
 
     pointer-events: none;
 
-    width: 560px;
+    width: 590px;
 
     height: auto;
 
@@ -794,9 +794,9 @@ body {
        amarilla y baja hacia la tarjeta.
     */
 
-    left: 69%;
+    left: 71%;
 
-    top: -25px;
+    top: -30px;
 
     transform: translateX(-50%);
 }
