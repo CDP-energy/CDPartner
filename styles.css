@@ -687,7 +687,7 @@ body {
     object-position: center top;
 }
 /* ========================================
-   EXPERIENCIA
+   SECCIÓN EXPERIENCIA
 ======================================== */
 
 .experience-section {
@@ -696,84 +696,128 @@ body {
 
     width: 100%;
 
-    min-height: 620px;
+    min-height: 560px;
 
     background: #f3f2ed;
 
     overflow: hidden;
 
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
+    font-family: "Poppins", sans-serif;
 }
 
 
 /* ========================================
    RUTA DEL AVIÓN
+   CAPA TRASERA
 ======================================== */
 
-.flight-route {
+.flight-route-back {
 
     position: absolute;
 
-    width: 780px;
+    top: -5px;
+    left: 50%;
 
+    width: 100%;
     height: auto;
 
-    right: -80px;
-
-    top: -120px;
+    transform: translateX(-50%);
 
     z-index: 1;
 
     pointer-events: none;
-
-    opacity: 1;
 }
 
 
 /* ========================================
-   TARJETA DE EXPERIENCIA
+   TARJETA FLOTANTE
 ======================================== */
 
 .experience-card {
 
     position: relative;
 
-    z-index: 3;
+    z-index: 2;
 
-    width: min(650px, 75%);
+    width: 580px;
 
-    padding: 42px 55px;
+    min-height: 330px;
 
-    background: #f8f9fd;
+    margin: 95px auto 0;
+
+    padding: 48px 55px 42px;
+
+    box-sizing: border-box;
+
+    background-color: #f8f9fd;
 
     border-radius: 16px;
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.20);
+        0 15px 30px rgba(0, 0, 0, 0.18);
 
     text-align: center;
 
-    font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 
 
 /* ========================================
-   TÍTULO EXPERIENCIA
+   MAPA DECORATIVO
+======================================== */
+
+.experience-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        url("Mapa-de-cuadro-flotante.png");
+
+    background-repeat: no-repeat;
+
+    background-position: center bottom;
+
+    background-size: 90% auto;
+
+    opacity: 0.10;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* ========================================
+   CONTENIDO DE LA TARJETA
+======================================== */
+
+.experience-card h2,
+.experience-card .experience-text,
+.experience-card .adventure-button {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* ========================================
+   TÍTULO
 ======================================== */
 
 .experience-card h2 {
 
-    margin: 0 0 20px;
+    margin: 0 0 22px;
 
     color: #202622;
 
     font-family: "Poppins", sans-serif;
 
-    font-size: 20px;
+    font-size: 19px;
 
     line-height: 1.2;
 
@@ -784,19 +828,20 @@ body {
 
 
 /* ========================================
-   TEXTO EXPERIENCIA
+   TEXTO
 ======================================== */
 
 .experience-text {
 
-    max-width: 510px;
+    max-width: 480px;
 
-    margin: 0 auto 25px;
+    margin: 0 auto;
 }
+
 
 .experience-text p {
 
-    margin: 0 0 9px;
+    margin: 0 0 12px;
 
     color: #606060;
 
@@ -806,19 +851,21 @@ body {
 
     line-height: 1.55;
 
-    font-style: italic;
-
     font-weight: 300;
+
+    font-style: italic;
 }
 
 
-/* Frase final */
+/* ========================================
+   FRASE FINAL
+======================================== */
 
-.experience-text p:last-child {
+.experience-text .experience-final {
 
-    margin-top: 17px;
+    margin-top: 20px;
 
-    margin-bottom: 0;
+    margin-bottom: 24px;
 
     color: #202622;
 
@@ -826,21 +873,27 @@ body {
 
     font-size: 12px;
 
-    font-style: normal;
+    line-height: 1.45;
 
     font-weight: 500;
+
+    font-style: normal;
 }
 
 
 /* ========================================
-   BOTÓN EXPERIENCIA
+   BOTÓN
 ======================================== */
 
 .adventure-button {
 
-    display: inline-block;
+    display: inline-flex;
 
-    padding: 11px 23px;
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 11px 20px;
 
     background: #eebe4f;
 
@@ -857,262 +910,74 @@ body {
     border-radius: 5px;
 
     box-shadow:
-        0 6px 15px rgba(0, 0, 0, 0.15);
+        0 7px 14px rgba(0, 0, 0, 0.15);
 
-    transition: 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
+
 
 .adventure-button:hover {
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 9px 20px rgba(0, 0, 0, 0.2);
+        0 10px 18px rgba(0, 0, 0, 0.18);
 }
 
 
 /* ========================================
-   RESPONSIVE — TABLET
+   RUTA DEL AVIÓN
+   CAPA DELANTERA
 ======================================== */
 
-@media (max-width: 900px) {
+.flight-route-front {
 
-    /* HERO */
+    position: absolute;
 
-    .hero-text {
-        width: 55%;
-    }
+    top: -5px;
+    left: 50%;
 
-    .hero-title {
-        font-size: clamp(38px, 6vw, 60px);
-    }
+    width: 100%;
+    height: 100%;
 
+    transform: translateX(-50%);
 
-    /* BIENVENIDA */
+    z-index: 3;
 
-    .welcome-section {
-        min-height: 500px;
-    }
+    pointer-events: none;
 
-    .welcome-content {
-        width: 65%;
-        min-height: 500px;
-        padding: 45px 7%;
-    }
-
-    .what-is-image {
-        width: 42%;
-        height: 500px;
-        top: 0;
-        right: 0;
-    }
-
-
-    /* EXPERIENCIA */
-
-    .experience-section {
-        min-height: 650px;
-    }
-
-    .flight-route {
-        width: 900px;
-        right: -120px;
-        top: -210px;
-    }
-
-    .experience-card {
-        width: 80%;
-    }
-}
-
-
-/* ========================================
-   RESPONSIVE — CELULAR
-======================================== */
-
-@media (max-width: 600px) {
-
-    /* HERO */
-
-    .hero {
-        min-height: 760px;
-        background-position: 63% center;
-    }
-
-    .top-bar {
-        height: 62px;
-        padding: 0 6%;
-    }
-
-    .logo {
-        width: 90px;
-    }
-
-    .login-button {
-        padding: 9px 14px;
-        font-size: 9px;
-    }
-
-    .hero-content {
-        min-height: 760px;
-
-        align-items: flex-start;
-
-        padding: 145px 7% 80px;
-    }
-
-    .hero-text {
-        width: 100%;
-        max-width: 390px;
-    }
-
-    .hero-kicker {
-        font-size: 10px;
-        letter-spacing: 3px;
-        margin-bottom: 18px;
-    }
-
-    .hero-title {
-        font-size: clamp(39px, 11vw, 54px);
-        line-height: 0.96;
-        margin-bottom: 20px;
-    }
-
-    .hero-description {
-        font-size: 9px;
-        letter-spacing: 1.5px;
-        max-width: 300px;
-        margin-bottom: 25px;
-    }
-
-    .register-button {
-        padding: 14px 22px;
-        font-size: 10px;
-    }
-
-    .hero-extra {
-        font-size: 7px;
-        letter-spacing: 2px;
-        margin-top: 25px;
-    }
-
-    .scroll-indicator {
-        left: 7%;
-        bottom: 20px;
-        font-size: 7px;
-        letter-spacing: 2px;
-    }
-
-
-    /* BARRA AMARILLA */
-
-    .yellow-strip {
-        min-height: 65px;
-    }
-
-    .yellow-strip p {
-        font-size: 15px;
-    }
-
-
-    /* BIENVENIDA */
-
-    .welcome-section {
-        min-height: auto;
-    }
-
-    .welcome-content {
-        width: 100%;
-        min-height: auto;
-        padding: 45px 7%;
-    }
-
-    .welcome-content h2 {
-        font-size: 32px;
-    }
-
-    .welcome-text p {
-        font-size: 14px;
-    }
-
-    .gallery-row {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .gallery-row p {
-        white-space: normal;
-    }
-
+    overflow: hidden;
 
     /*
-       En celular la imagen ya no se
-       superpone: pasa debajo del texto.
+       Dejamos visible únicamente la zona
+       donde la ruta/avión debe aparecer
+       por encima de la tarjeta.
     */
 
-    .what-is-image {
-
-        position: relative;
-
-        top: auto;
-        right: auto;
-
-        width: 100%;
-
-        height: auto;
-
-        min-height: 350px;
-
-        overflow: hidden;
-
-        z-index: 1;
-    }
-
-    .what-is-image img {
-
-        width: 100%;
-
-        height: auto;
-
-        object-fit: contain;
-    }
+    clip-path: polygon(
+        48% 0%,
+        100% 0%,
+        100% 100%,
+        72% 100%,
+        67% 70%,
+        65% 48%,
+        58% 38%,
+        52% 30%
+    );
+}
 
 
-    /* EXPERIENCIA */
+.flight-route-front img {
 
-    .experience-section {
+    position: absolute;
 
-        min-height: 600px;
+    top: 0;
+    left: 0;
 
-        padding: 80px 0;
-    }
+    width: 100%;
+    height: auto;
 
-    .flight-route {
-
-        width: 700px;
-
-        right: -250px;
-
-        top: -20px;
-    }
-
-    .experience-card {
-
-        width: 88%;
-
-        padding: 38px 25px;
-    }
-
-    .experience-card h2 {
-
-        font-size: 18px;
-
-        white-space: normal;
-    }
-
-    .experience-text p {
-
-        font-size: 14px;
-    }
+    display: block;
 }
