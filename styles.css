@@ -785,7 +785,7 @@ body {
 
     pointer-events: none;
 
-    width: 560px;
+    width: 660px;
 
     height: auto;
 
@@ -794,12 +794,13 @@ body {
        amarilla y baja hacia la tarjeta.
     */
 
-    left: 63%;
+    left: 67%;
 
-    top: 20px;
+    top: -15px;
 
     transform: translateX(-50%);
 }
+
 
 /* ========================================
    SECCIÓN EXPERIENCIA
