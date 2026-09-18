@@ -411,11 +411,7 @@ body {
 
     width: 100%;
 
-    min-height: 500px;
-
-    display: flex;
-
-    align-items: stretch;
+    min-height: 540px;
 
     background: #f8f9fd;
 
@@ -423,7 +419,6 @@ body {
 
     font-family: "Poppins", sans-serif;
 }
-
 
 /* ========================================
    BIENVENIDA — 65%
@@ -433,21 +428,17 @@ body {
 
     position: relative;
 
-    flex: 0 0 65%;
+    width: 100%;
 
-    width: 65%;
+    min-height: 540px;
 
-    min-width: 0;
-
-    min-height: 500px;
-
-    padding: 55px 7% 48px 7%;
+    padding: 55px 42% 48px 7%;
 
     background: #f8f9fd;
 
     color: #011d3d;
 
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -680,34 +671,37 @@ body {
 
  .what-is-image {
 
-    position: relative;
+    position: absolute;
 
-    flex: 0 0 40%;
+    top: 0;
 
-    width: 40%;
+    right: 0;
 
-    min-height: 500px;
+    width: 43%;
+
+    height: 540px;
 
     overflow: hidden;
 
-    box-sizing: border-box;
-
-    z-index: 3;
+    z-index: 5;
 }
 
-.what-is-image img {
+.what-is-image {
 
-    width: 100%;
+    position: absolute;
 
-    height: 100%;
+    top: 0;
 
-    display: block;
+    right: 0;
 
-    object-fit: cover;
+    width: 43%;
 
-    object-position: center center;
+    height: 540px;
+
+    overflow: hidden;
+
+    z-index: 5;
 }
-
 
 /* ========================================
    EXPERIENCIA
@@ -915,31 +909,30 @@ body {
 
     /* BIENVENIDA */
 
-    .welcome-section {
+   .welcome-section {
 
-        flex-direction: column;
-    }
+    min-height: 540px;
+}
 
-    .welcome-content {
+.welcome-content {
 
-        flex: 0 0 auto;
+    width: 100%;
 
-        width: 100%;
+    min-height: 540px;
 
-        min-height: auto;
+    padding: 50px 43% 45px 7%;
+}
 
-        padding: 50px 7%;
-    }
+.what-is-image {
 
-    .what-is-image {
+    width: 43%;
 
-        flex: 0 0 auto;
+    height: 540px;
 
-        width: 100%;
+    top: 0;
 
-        min-height: 500px;
-    }
-
+    right: 0;
+}
 
     /* EXPERIENCIA */
 
