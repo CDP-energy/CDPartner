@@ -775,7 +775,6 @@ body {
 
 /* ========================================
    RUTA DEL AVIÓN
-   ELEMENTO ÚNICO
 ======================================== */
 
 .flight-route {
@@ -786,23 +785,21 @@ body {
 
     pointer-events: none;
 
-    /*
-       La imagen se extiende desde la
-       zona inferior de bienvenida hacia
-       la sección de experiencia.
-    */
-
-    width: 650px;
+    width: 560px;
 
     height: auto;
 
-    left: 51%;
+    /*
+       La ruta nace cerca de la barra
+       amarilla y baja hacia la tarjeta.
+    */
 
-    top: 250px;
+    left: 63%;
+
+    top: 20px;
 
     transform: translateX(-50%);
 }
-
 
 /* ========================================
    SECCIÓN EXPERIENCIA
