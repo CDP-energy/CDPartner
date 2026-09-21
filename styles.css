@@ -1110,7 +1110,9 @@ body {
 
     position: relative;
 
-    width: 100%;
+    width: 92%;
+
+    margin: 0 auto;
 
     background: #f3f2ed;
 
@@ -1119,6 +1121,171 @@ body {
     box-sizing: border-box;
 
     font-family: "Poppins", sans-serif;
+}
+
+
+/* ========================================
+   CONTENEDOR
+======================================== */
+
+.discover-content {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.discover-content h2 {
+
+    margin: 0 0 32px;
+
+    color: #eebe4f;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 24px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* ========================================
+   CONTENEDOR DE LOS 3 PASOS
+======================================== */
+
+.discover-steps {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 55px;
+
+    width: 100%;
+}
+
+
+/* ========================================
+   CADA PASO
+======================================== */
+
+.discover-step {
+
+    flex: 1;
+
+    max-width: 220px;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   ICONOS
+======================================== */
+
+.discover-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: block;
+
+    margin: 0 auto 10px;
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   TÍTULOS DE LOS PASOS
+======================================== */
+
+.discover-step h3 {
+
+    margin: 0 0 10px;
+
+    color: #202622;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+/* ========================================
+   TEXTO DE LOS PASOS
+======================================== */
+
+.discover-step p {
+
+    margin: 0 auto;
+
+    max-width: 190px;
+
+    color: #202622;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.45;
+
+    font-weight: 400;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .discover-section {
+
+        width: 92%;
+
+        padding: 45px 25px 55px;
+    }
+
+    .discover-content h2 {
+
+        font-size: 21px;
+
+        margin-bottom: 30px;
+    }
+
+    .discover-steps {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 35px;
+    }
+
+    .discover-step {
+
+        max-width: 260px;
+    }
+
 }
 
 
