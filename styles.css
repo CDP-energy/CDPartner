@@ -875,11 +875,11 @@ body {
 
     z-index: 0;
 
-    top: 30px;
+    top: 25px;
     left: 50%;
 
-    width: 680px;
-    height: 320px;
+    width: 760px;
+    height: 360px;
 
     transform: translateX(-50%);
 
