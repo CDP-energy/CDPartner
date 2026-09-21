@@ -1146,3 +1146,187 @@ body {
         max-width: 260px;
     }
 }
+/* ========================================
+   ESTATUS DEL EXPEDIENTE 2027
+======================================== */
+
+.status-section {
+    position: relative;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 42px 40px 55px;
+
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   CONTENIDO
+======================================== */
+
+.status-content {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.status-content h2 {
+    margin: 0 0 4px;
+
+    color: #011d3d;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* ========================================
+   DESCRIPCIÓN
+======================================== */
+
+.status-description {
+    margin: 0 0 22px;
+
+    color: #202622;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    font-weight: 400;
+}
+
+
+/* ========================================
+   CONTENEDOR DE TICKETS
+======================================== */
+
+.status-tickets {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    width: 100%;
+}
+
+
+/* ========================================
+   CADA TICKET
+======================================== */
+
+.status-ticket {
+    flex: 0 0 auto;
+
+    width: 190px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ========================================
+   IMAGEN DEL TICKET
+======================================== */
+
+.status-ticket img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   FRANJA INFERIOR
+======================================== */
+
+.status-section::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 6px;
+
+    background: #eebe4f;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .status-tickets {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .status-ticket {
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .status-section {
+        padding: 35px 20px 45px;
+    }
+
+    .status-content h2 {
+        font-size: 16px;
+    }
+
+    .status-description {
+        font-size: 9px;
+
+        margin-bottom: 20px;
+    }
+
+    .status-tickets {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .status-ticket {
+        width: min(260px, 90%);
+    }
+}
