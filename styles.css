@@ -1051,3 +1051,53 @@ body {
 
     display: block;
 }
+
+/* ========================================
+   AJUSTE FINAL DE FONDOS
+======================================== */
+
+/* Fondo general de la página */
+body {
+    background: #ffffff;
+}
+
+
+/* ========================================
+   SECCIÓN BIENVENIDA
+======================================== */
+
+.welcome-section {
+    background: #f8f9fd;
+}
+
+.welcome-content {
+    background: #f8f9fd;
+}
+
+
+/* ========================================
+   ZONA DE EXPERIENCIA
+   Fondo beige del diseño
+======================================== */
+
+.experience-section {
+    background: #f3f2ed;
+}
+
+
+/* ========================================
+   TARJETA FLOTANTE
+======================================== */
+
+.experience-card {
+    background: #f8f9fd;
+}
+
+
+/* ========================================
+   IMAGEN ¿QUÉ ES CDPARTNER?
+======================================== */
+
+.what-is-image {
+    background: #f3f2ed;
+}
