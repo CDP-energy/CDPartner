@@ -9,11 +9,9 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
     font-family: "Poppins", sans-serif;
@@ -27,21 +25,15 @@ body {
 ======================================== */
 
 .hero {
-
     position: relative;
-
     width: 100%;
-
     min-height: 100vh;
 
     background-image: url("portada.jpg");
-
     background-size: cover;
-
     background-position: center center;
 
     overflow: hidden;
-
     color: #ffffff;
 }
 
@@ -49,11 +41,9 @@ body {
 /* Oscurecimiento */
 
 .hero::after {
-
     content: "";
 
     position: absolute;
-
     inset: 0;
 
     background: linear-gradient(
@@ -72,20 +62,16 @@ body {
 ======================================== */
 
 .top-bar {
-
     position: absolute;
 
     top: 0;
     left: 0;
 
     width: 100%;
-
     height: 72px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     padding: 0 5%;
@@ -101,11 +87,8 @@ body {
 /* Logo */
 
 .logo {
-
     width: 115px;
-
     height: auto;
-
     display: block;
 }
 
@@ -115,25 +98,20 @@ body {
 ======================================== */
 
 .login-button {
-
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 11px 22px;
 
     background: #eebe4f;
-
     color: #101820;
 
     text-decoration: none;
 
     font-family: "Poppins", sans-serif;
-
     font-size: 11px;
-
     font-weight: 700;
 
     border-radius: 3px;
@@ -141,11 +119,8 @@ body {
     transition: all 0.25s ease;
 }
 
-
 .login-button:hover {
-
     background: #ffd45c;
-
     transform: translateY(-2px);
 }
 
@@ -155,23 +130,18 @@ body {
 ======================================== */
 
 .hero-content {
-
     position: relative;
 
     z-index: 5;
 
     width: 100%;
-
     min-height: 100vh;
 
     display: flex;
-
     align-items: center;
 
     padding-left: 5%;
-
     padding-top: 72px;
-
     padding-bottom: 90px;
 }
 
@@ -179,9 +149,7 @@ body {
 /* Columna izquierda */
 
 .hero-text {
-
     width: 42%;
-
     max-width: 540px;
 }
 
@@ -189,11 +157,9 @@ body {
 /* Texto pequeño */
 
 .hero-kicker {
-
     margin-bottom: 22px;
 
     font-size: 13px;
-
     line-height: 1.7;
 
     letter-spacing: 4px;
@@ -203,9 +169,7 @@ body {
     color: #ffffff;
 }
 
-
 .hero-kicker::before {
-
     content: "///////";
 
     display: block;
@@ -215,7 +179,6 @@ body {
     color: #eebe4f;
 
     font-weight: 900;
-
     letter-spacing: 2px;
 }
 
@@ -225,7 +188,6 @@ body {
 ======================================== */
 
 .hero-title {
-
     font-size: clamp(38px, 4.3vw, 64px);
 
     line-height: 0.92;
@@ -239,9 +201,7 @@ body {
     max-width: 600px;
 }
 
-
 .hero-title .yellow {
-
     color: #eebe4f;
 }
 
@@ -251,11 +211,9 @@ body {
 ======================================== */
 
 .hero-description {
-
     max-width: 420px;
 
     font-size: 12px;
-
     line-height: 1.7;
 
     letter-spacing: 2px;
@@ -271,7 +229,6 @@ body {
 ======================================== */
 
 .register-button {
-
     display: inline-flex;
 
     align-items: center;
@@ -281,13 +238,11 @@ body {
     padding: 16px 30px;
 
     background: #eebe4f;
-
     color: #101820;
 
     text-decoration: none;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 1px;
@@ -297,17 +252,12 @@ body {
     transition: all 0.25s ease;
 }
 
-
 .register-button span {
-
     font-size: 18px;
-
     line-height: 0;
 }
 
-
 .register-button:hover {
-
     background: #ffd45c;
 
     transform: translateY(-3px);
@@ -322,7 +272,6 @@ body {
 ======================================== */
 
 .hero-extra {
-
     margin-top: 26px;
 
     font-size: 9px;
@@ -340,11 +289,9 @@ body {
 ======================================== */
 
 .scroll-indicator {
-
     position: absolute;
 
     left: 5%;
-
     bottom: 18px;
 
     z-index: 6;
@@ -366,11 +313,8 @@ body {
     text-transform: uppercase;
 }
 
-
 .scroll-icon {
-
     width: 25px;
-
     height: 38px;
 
     border: 1px solid #eebe4f;
@@ -380,19 +324,15 @@ body {
     display: flex;
 
     align-items: flex-end;
-
     justify-content: center;
 
     padding-bottom: 6px;
 }
 
-
 .scroll-icon::after {
-
     content: "";
 
     width: 4px;
-
     height: 7px;
 
     background: #eebe4f;
@@ -401,7 +341,6 @@ body {
 
     animation: scrollMove 1.5s infinite;
 }
-
 
 @keyframes scrollMove {
 
@@ -418,7 +357,6 @@ body {
         transform: translateY(4px);
         opacity: 0;
     }
-
 }
 
 
@@ -427,7 +365,6 @@ body {
 ======================================== */
 
 .yellow-strip {
-
     width: 100%;
 
     min-height: 72px;
@@ -437,15 +374,12 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 20px 5%;
 }
 
-
 .yellow-strip p {
-
     margin: 0;
 
     color: #ffffff;
@@ -463,11 +397,9 @@ body {
 ======================================== */
 
 .welcome-section {
-
     position: relative;
 
     width: 100%;
-
     height: 397px;
 
     background: #f8f9fd;
@@ -483,11 +415,9 @@ body {
 ======================================== */
 
 .welcome-content {
-
     position: relative;
 
     width: 56%;
-
     height: 397px;
 
     box-sizing: border-box;
@@ -507,7 +437,6 @@ body {
 ======================================== */
 
 .welcome-content h2 {
-
     max-width: 520px;
 
     margin: 0 0 15px;
@@ -531,13 +460,10 @@ body {
 ======================================== */
 
 .welcome-text {
-
     max-width: 550px;
 }
 
-
 .welcome-text p {
-
     margin: 0 0 9px;
 
     color: #202622;
@@ -553,9 +479,7 @@ body {
     font-weight: 400;
 }
 
-
 .welcome-text p:last-child {
-
     margin-bottom: 0;
 }
 
@@ -565,7 +489,6 @@ body {
 ======================================== */
 
 .welcome-signature {
-
     display: flex;
 
     align-items: center;
@@ -579,9 +502,7 @@ body {
 /* Foto circular */
 
 .ingrid-photo-frame {
-
     width: 58px;
-
     height: 58px;
 
     flex-shrink: 0;
@@ -597,15 +518,11 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 }
 
-
 .ingrid-photo-frame img {
-
     width: 100%;
-
     height: 100%;
 
     display: block;
@@ -619,7 +536,6 @@ body {
 /* Información */
 
 .signature-info {
-
     display: flex;
 
     align-items: baseline;
@@ -629,9 +545,7 @@ body {
     white-space: nowrap;
 }
 
-
 .signature-info strong {
-
     color: #011d3d;
 
     font-family: "Poppins", sans-serif;
@@ -641,9 +555,7 @@ body {
     font-weight: 700;
 }
 
-
 .signature-info span {
-
     color: #606060;
 
     font-family: "Poppins", sans-serif;
@@ -659,7 +571,6 @@ body {
 ======================================== */
 
 .gallery-row {
-
     display: flex;
 
     align-items: center;
@@ -673,9 +584,7 @@ body {
     max-width: 620px;
 }
 
-
 .gallery-row p {
-
     margin: 0;
 
     color: #606060;
@@ -689,17 +598,13 @@ body {
     white-space: nowrap;
 }
 
-
 .gallery-row strong {
-
     color: #011d3d;
 
     font-weight: 700;
 }
 
-
 .gallery-button {
-
     flex-shrink: 0;
 
     display: inline-flex;
@@ -727,28 +632,22 @@ body {
     transition: 0.25s ease;
 }
 
-
 .gallery-button:hover {
-
     transform: translateY(-2px);
 }
 
 
 /* ========================================
    ¿QUÉ ES CDPARTNER?
-   CAPA SUPERIOR
 ======================================== */
 
 .what-is-image {
-
     position: absolute;
 
     top: 0;
-
     right: 0;
 
     width: 44%;
-
     height: 397px;
 
     overflow: hidden;
@@ -758,11 +657,8 @@ body {
     display: block;
 }
 
-
 .what-is-image img {
-
     width: 100%;
-
     height: 100%;
 
     display: block;
@@ -804,11 +700,40 @@ body {
     width: 100%;
     min-height: 620px;
 
-    background: #f5f3ee;
+    /*
+       IMPORTANTE:
+       El fondo general es BLANCO.
+       El beige estará en ::before.
+    */
+    background: #ffffff;
 
     overflow: hidden;
 
     font-family: "Poppins", sans-serif;
+}
+
+
+/* ========================================
+   RECTÁNGULO BEIGE DETRÁS
+   DE LA TARJETA
+======================================== */
+
+.experience-section::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: 0;
+
+    top: 0;
+    bottom: 0;
+
+    left: 4%;
+    right: 4%;
+
+    background: #f3f2ed;
+
+    pointer-events: none;
 }
 
 
@@ -939,7 +864,6 @@ body {
     margin: 0 auto;
 }
 
-
 .experience-text p {
     margin: 0 0 14px;
 
@@ -988,7 +912,6 @@ body {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 13px 24px;
@@ -1015,13 +938,13 @@ body {
         box-shadow 0.25s ease;
 }
 
-
 .adventure-button:hover {
     transform: translateY(-2px);
 
     box-shadow:
         0 10px 18px rgba(0, 0, 0, 0.18);
 }
+
 
 /* ========================================
    RUTA DEL AVIÓN — CAPA DELANTERA
@@ -1043,7 +966,6 @@ body {
     height: 0;
 }
 
-
 .flight-route-front img {
     width: 100%;
 
@@ -1052,62 +974,12 @@ body {
     display: block;
 }
 
-/* ========================================
-   AJUSTE FINAL DE FONDOS
-======================================== */
-
-/* Fondo general de la página */
-body {
-    background: #ffffff;
-}
-
-
-/* ========================================
-   SECCIÓN BIENVENIDA
-======================================== */
-
-.welcome-section {
-    background: #f8f9fd;
-}
-
-.welcome-content {
-    background: #f8f9fd;
-}
-
-
-/* ========================================
-   ZONA DE EXPERIENCIA
-   Fondo beige del diseño
-======================================== */
-
-.experience-section {
-    background: #f3f2ed;
-}
-
-
-/* ========================================
-   TARJETA FLOTANTE
-======================================== */
-
-.experience-card {
-    background: #f8f9fd;
-}
-
-
-/* ========================================
-   IMAGEN ¿QUÉ ES CDPARTNER?
-======================================== */
-
-.what-is-image {
-    background: #f3f2ed;
-}
 
 /* ========================================
    ¿CÓMO DESCUBRIR EL PRÓXIMO DESTINO?
 ======================================== */
 
 .discover-section {
-
     position: relative;
 
     width: 92%;
@@ -1129,7 +1001,6 @@ body {
 ======================================== */
 
 .discover-content {
-
     width: 100%;
 
     max-width: 900px;
@@ -1145,7 +1016,6 @@ body {
 ======================================== */
 
 .discover-content h2 {
-
     margin: 0 0 32px;
 
     color: #eebe4f;
@@ -1165,7 +1035,6 @@ body {
 ======================================== */
 
 .discover-steps {
-
     display: flex;
 
     justify-content: center;
@@ -1183,7 +1052,6 @@ body {
 ======================================== */
 
 .discover-step {
-
     flex: 1;
 
     max-width: 220px;
@@ -1197,9 +1065,7 @@ body {
 ======================================== */
 
 .discover-icon {
-
     width: 42px;
-
     height: 42px;
 
     display: block;
@@ -1215,7 +1081,6 @@ body {
 ======================================== */
 
 .discover-step h3 {
-
     margin: 0 0 10px;
 
     color: #202622;
@@ -1235,7 +1100,6 @@ body {
 ======================================== */
 
 .discover-step p {
-
     margin: 0 auto;
 
     max-width: 190px;
@@ -1259,21 +1123,18 @@ body {
 @media (max-width: 700px) {
 
     .discover-section {
-
         width: 92%;
 
         padding: 45px 25px 55px;
     }
 
     .discover-content h2 {
-
         font-size: 21px;
 
         margin-bottom: 30px;
     }
 
     .discover-steps {
-
         flex-direction: column;
 
         align-items: center;
@@ -1282,171 +1143,6 @@ body {
     }
 
     .discover-step {
-
         max-width: 260px;
     }
-
-}
-
-
-/* ========================================
-   CONTENEDOR
-======================================== */
-
-.discover-content {
-
-    width: 100%;
-
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    text-align: center;
-}
-
-
-/* ========================================
-   TÍTULO
-======================================== */
-
-.discover-content h2 {
-
-    margin: 0 0 32px;
-
-    color: #eebe4f;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 24px;
-
-    line-height: 1.2;
-
-    font-weight: 700;
-}
-
-
-/* ========================================
-   CONTENEDOR DE LOS 3 PASOS
-======================================== */
-
-.discover-steps {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: flex-start;
-
-    gap: 55px;
-
-    width: 100%;
-}
-
-
-/* ========================================
-   CADA PASO
-======================================== */
-
-.discover-step {
-
-    flex: 1;
-
-    max-width: 220px;
-
-    text-align: center;
-}
-
-
-/* ========================================
-   ICONOS
-======================================== */
-
-.discover-icon {
-
-    width: 42px;
-
-    height: 42px;
-
-    display: block;
-
-    margin: 0 auto 10px;
-
-    object-fit: contain;
-}
-
-
-/* ========================================
-   TÍTULOS DE LOS PASOS
-======================================== */
-
-.discover-step h3 {
-
-    margin: 0 0 10px;
-
-    color: #202622;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 13px;
-
-    line-height: 1.25;
-
-    font-weight: 700;
-}
-
-
-/* ========================================
-   TEXTO DE LOS PASOS
-======================================== */
-
-.discover-step p {
-
-    margin: 0 auto;
-
-    max-width: 190px;
-
-    color: #202622;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 9px;
-
-    line-height: 1.45;
-
-    font-weight: 400;
-}
-
-
-/* ========================================
-   RESPONSIVE
-======================================== */
-
-@media (max-width: 700px) {
-
-    .discover-section {
-
-        padding: 45px 25px 55px;
-    }
-
-    .discover-content h2 {
-
-        font-size: 21px;
-
-        margin-bottom: 30px;
-    }
-
-    .discover-steps {
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 35px;
-    }
-
-    .discover-step {
-
-        max-width: 260px;
-    }
-
 }
